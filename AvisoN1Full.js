@@ -426,7 +426,7 @@ function main(){
                 if (opcionalcores === "yes"){
                     linha.style = "background-color:#F0E68C";}
             }
-            if(nome.data === "QA N1" ||nome.data === "QA Gestão Ambientes"){
+            if(nome.data === "QA N1" ||nome.data === "Compasso N1" ||nome.data === "QA Gestão Ambientes"){
                 console.log("contOpen++");
                 contOpen++; //Conta quantos defeitos estão como QA N1
                 if (opcionalcores === "yes"){
@@ -442,22 +442,22 @@ function main(){
                 link.style = backgroungDefAberto+";"+fonteDefAberto;
             }
             for (var cont = 0; cont < sistemasx.length; cont++){
-                if(nome.data=== "QA N1"  && sistema.data === sistemasx[cont] || nome.data=== "QA Gestão Ambientes"  && sistema.data === sistemasx[cont]){
+                if(nome.data=== "QA N1"  && sistema.data === sistemasx[cont] ||nome.data=== "Compasso N1"  && sistema.data === sistemasx[cont] || nome.data=== "QA Gestão Ambientes"  && sistema.data === sistemasx[cont]){
                     console.log("Encontrado");
                     sistemas.push(" "+sistema.data);
                     contSistema++;
                 }
             }
-            if(slaData >= 20 && (nome.data=== "QA N1" ||nome.data=== "QA Gestão Ambientes" ) && slaArray[1] === "Minute(s)" && opcionalcores === "yes"){
+            if(slaData >= 20 && (nome.data=== "QA N1" ||nome.data=== "Compasso N1" ||nome.data=== "QA Gestão Ambientes" ) && slaArray[1] === "Minute(s)" && opcionalcores === "yes"){
                 slaRef.style = "background-color:goldenrod; color: black";
 
             }
-            if(slaData >= 30 && (nome.data=== "QA N1" ||nome.data=== "QA Gestão Ambientes" )  && slaArray[1] === "Minute(s)" && opcionalcores === "yes"){
+            if(slaData >= 30 && (nome.data=== "QA N1" ||nome.data=== "Compasso N1" ||nome.data=== "QA Gestão Ambientes" )  && slaArray[1] === "Minute(s)" && opcionalcores === "yes"){
                 slaRef.style = "background-color:tomato; color: black";
 
             }
             for (cont = 0; cont < sistemasx.length; cont++){
-                if(opcionalcores === "yes" && sistema.data === sistemasx[cont] && (nome.data=== "QA N1" ||nome.data=== "QA Gestão Ambientes" ) ){
+                if(opcionalcores === "yes" && sistema.data === sistemasx[cont] && (nome.data=== "QA N1" ||nome.data=== "Compasso N1" ||nome.data=== "QA Gestão Ambientes" ) ){
                     sistemaRef.style = "color:green;font-weight: bold";
                     idRef.style = "color:green;font-weight: bold";
                 }
