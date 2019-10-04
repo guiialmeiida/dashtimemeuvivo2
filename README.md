@@ -4,7 +4,7 @@ Script criado para rodar na extensão [Tampermonkey](https://chrome.google.com/w
 
 
 
-Desenvolvido em JavaScript, ele apresenta um aviso no Windows, com as seguintes especificaçoes: 
+Desenvolvido em JavaScript, apresenta um aviso no Windows, com as seguintes especificaçoes: 
 
 + Quantidade de defeitos na fila.
 + Quantidade de defeitos em seu nome.
