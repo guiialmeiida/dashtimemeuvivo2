@@ -1,5 +1,5 @@
 setTimeout(function(){
-    window.location.reload(1);
+    window.location.reload(2);
 }, temporefresh); // Tempo para atualização da página
 
 try{
